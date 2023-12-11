@@ -1,9 +1,9 @@
 <config>
   <AutoStart>1</AutoStart>
-  <MovieWidth>800</MovieWidth>
-  <MovieHeight>600</MovieHeight>
+  <MovieWidth>648</MovieWidth>
+  <MovieHeight>512</MovieHeight>
   <BackgroundColor>FFFFFF</BackgroundColor>
-  <MovieURL>peg3a_controller.swf</MovieURL>
+  <MovieURL>piston.swf</MovieURL>
   <ShowLoadingMov>0</ShowLoadingMov>
   <LoadingMovURL/>
   <ScaleLoadingMov>1</ScaleLoadingMov>
