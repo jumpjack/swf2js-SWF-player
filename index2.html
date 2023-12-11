@@ -1,11 +1,30 @@
 <html>
-<body>
-    <script type="text/javascript" src="swf2js.js"></script>
-<script type="text/javascript">
-    swf2js.load('piston.swf');
-</script>  
-Test<br>
-Please wait until file loads automatically...<br>
+  <body>
+    <input type="file" id="fileInput" accept=".swf">
+    <button onclick="loadSwf()">Load SWF</button>
 
-</body>    
+    <script type="text/javascript" src="swf2js.js"></script>
+    <script type="text/javascript">
+      function loadSwf() {
+        var fileInput = document.getElementById('fileInput');
+        var selectedFile = fileInput.files[0];
+
+        if (selectedFile) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            var swfContent = e.target.result;
+            swf2js.load(swfContent);
+          };
+
+          reader.readAsDataURL(selectedFile);
+        } else {
+          alert('Please select a SWF file.');
+        }
+      }
+    </script>
+
+    Test<br>
+    Please wait until the file loads automatically...<br>
+  </body>
 </html>
