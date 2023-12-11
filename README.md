@@ -1,6 +1,6 @@
 # swf2js
 
-Player for SWF files. Live demo [here](https://jumpjack.github.io/swf2js-SWF-player).
+Player for SWF files. Live demo [here](https://jumpjack.github.io/swf2js-SWF-player/index2.html).
 
 I am not the author, I just forked it to enable live online demo, because the loader cannot work locally due to CORS restrictions.
 
